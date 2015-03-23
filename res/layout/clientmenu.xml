@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_light">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:id="@+id/clientExit" android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="false" android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"/>
+        <Button
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Appointment"
+                android:id="@+id/viewAppointment" android:layout_gravity="center_horizontal"
+                android:layout_marginTop="23dp" android:layout_below="@+id/connectStylist"
+                android:layout_centerHorizontal="true"/>
+        <Button
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:text="Create Appointment"
+                android:id="@+id/createAppointment" android:layout_gravity="center_horizontal"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/viewAppointment" android:layout_alignStart="@+id/viewAppointment"/>
+        <Button
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:text="Connect Stylist"
+                android:id="@+id/connectStylist" android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+</LinearLayout>

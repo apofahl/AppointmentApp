@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_light">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:ems="10"  android:textColor="#111111"
+            android:id="@+id/firstName" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:ems="10"  android:textColor="#111111"
+            android:id="@+id/lastName" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"  android:textColor="#111111"
+            android:id="@+id/password" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Reenter Password"
+            android:ems="10"  android:textColor="#111111"
+            android:id="@+id/rePass" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:ems="10"  android:textColor="#111111"
+            android:id="@+id/email" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="Zip Code"
+            android:ems="10"  android:textColor="#111111"
+            android:id="@+id/zipCode" android:layout_gravity="center_horizontal"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texts from stylist OK"  android:textColor="#111111"
+            android:id="@+id/sendText" android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Error"
+            android:id="@+id/newUserError" android:layout_gravity="center_horizontal" android:textColor="#cb1f1c"
+            android:visibility="invisible"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/create" android:layout_gravity="center_horizontal"/>
+</LinearLayout>

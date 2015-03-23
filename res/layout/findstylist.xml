@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_light">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Search By"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal" android:textColor="#111111"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="top">
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/nameButton"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/locationButton"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:ems="10"  android:textColor="#111111"
+                android:id="@+id/nameSearch" android:layout_gravity="center_horizontal" android:visibility="gone"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Zip Code"
+                android:ems="10"  android:textColor="#111111"
+                android:id="@+id/locSearch" android:layout_gravity="center_horizontal" android:visibility="gone"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/searchButton" android:layout_gravity="center_horizontal" android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="bottom">
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="279dp"  android:textColor="#111111"
+                android:id="@+id/stylistList" android:visibility="gone"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Stylist"
+                android:id="@+id/chooseButton" android:layout_gravity="center_horizontal"
+                android:singleLine="false" android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/background_light">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:ems="10"
+            android:id="@+id/signInEmail"
+            android:layout_gravity="center_horizontal" android:textColor="#111111"/> <requestFocus/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"
+            android:id="@+id/signInPass"
+            android:password="true"
+            android:layout_gravity="center_horizontal" android:textColor="#111111"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User!"
+                android:id="@+id/newUserLink"
+                android:layout_gravity="center_horizontal" android:textColor="#111111"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Error"
+                android:id="@+id/signInError"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#cb1f1c"
+                android:visibility="invisible"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:id="@+id/signInButton"
+                android:layout_gravity="center_horizontal"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stylist Sign In"
+                    android:id="@+id/textView" android:layout_gravity="center_horizontal" android:clickable="true"
+                    android:layout_alignParentEnd="false" android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
